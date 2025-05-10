@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RacerProvider } from './context/RacerContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <RacerProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </RacerProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
